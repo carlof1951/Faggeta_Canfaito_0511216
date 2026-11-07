@@ -23,7 +23,7 @@
     if (skipintro !== null, skipintroaction(); );
     if (s !== null, if (startscene === null, set(startscene, get(s));); );
     if (startscene === null,
-      set(startscene, pano194);
+      set(startscene, pano223);
     );
     mainloadscene(get(startscene));
     if (h !== null,
@@ -44,12 +44,12 @@
   
 
 
-<scene name="pano194"
+<scene name="pano223"
        heading="0"
-       thumburl="%FIRSTXML%/img_20261105_115453__194/thumbnail.jpg"
+       thumburl="%FIRSTXML%/img_20261105_115453__223/thumbnail.jpg"
        backgroundsound=""
        backgroundsoundloops="0"
-       titleid="pano194_title"
+       titleid="pano223_title"
        descriptionid=""
        multires="true"
        planar="false"
@@ -74,33 +74,33 @@
           hlookat="1.100000"
           vlookat="-11.000000"/>
 
-    <preview url="%FIRSTXML%/img_20261105_115453__194/preview.jpg" type="CUBESTRIP" striporder="FRBLUD"/>
+    <preview url="%FIRSTXML%/img_20261105_115453__223/preview.jpg" type="CUBESTRIP" striporder="FRBLUD"/>
 
     <image type="CUBE" multires="true" baseindex="0" tilesize="512" devices="!androidstock|webgl">
       <level tiledimagewidth="1592" tiledimageheight="1592">
-          <front url="img_20261105_115453__194/0/1/%v_%u.jpg"/>
-          <right url="img_20261105_115453__194/1/1/%v_%u.jpg"/>
-          <back  url="img_20261105_115453__194/2/1/%v_%u.jpg"/>
-          <left  url="img_20261105_115453__194/3/1/%v_%u.jpg"/>
-          <up    url="img_20261105_115453__194/4/1/%v_%u.jpg"/>
-          <down  url="img_20261105_115453__194/5/1/%v_%u.jpg"/>
+          <front url="img_20261105_115453__223/0/1/%v_%u.jpg"/>
+          <right url="img_20261105_115453__223/1/1/%v_%u.jpg"/>
+          <back  url="img_20261105_115453__223/2/1/%v_%u.jpg"/>
+          <left  url="img_20261105_115453__223/3/1/%v_%u.jpg"/>
+          <up    url="img_20261105_115453__223/4/1/%v_%u.jpg"/>
+          <down  url="img_20261105_115453__223/5/1/%v_%u.jpg"/>
       </level>
       <level tiledimagewidth="796" tiledimageheight="796">
-          <front url="img_20261105_115453__194/0/0/%v_%u.jpg"/>
-          <right url="img_20261105_115453__194/1/0/%v_%u.jpg"/>
-          <back  url="img_20261105_115453__194/2/0/%v_%u.jpg"/>
-          <left  url="img_20261105_115453__194/3/0/%v_%u.jpg"/>
-          <up    url="img_20261105_115453__194/4/0/%v_%u.jpg"/>
-          <down  url="img_20261105_115453__194/5/0/%v_%u.jpg"/>
+          <front url="img_20261105_115453__223/0/0/%v_%u.jpg"/>
+          <right url="img_20261105_115453__223/1/0/%v_%u.jpg"/>
+          <back  url="img_20261105_115453__223/2/0/%v_%u.jpg"/>
+          <left  url="img_20261105_115453__223/3/0/%v_%u.jpg"/>
+          <up    url="img_20261105_115453__223/4/0/%v_%u.jpg"/>
+          <down  url="img_20261105_115453__223/5/0/%v_%u.jpg"/>
       </level>
     </image>
       <image type="CUBE" devices="androidstock+!webgl">
-        <front url="img_20261105_115453__194/mobile/0.jpg"/>
-        <right url="img_20261105_115453__194/mobile/1.jpg"/>
-        <back  url="img_20261105_115453__194/mobile/2.jpg"/>
-        <left  url="img_20261105_115453__194/mobile/3.jpg"/>
-        <up    url="img_20261105_115453__194/mobile/4.jpg"/>
-        <down  url="img_20261105_115453__194/mobile/5.jpg"/>
+        <front url="img_20261105_115453__223/mobile/0.jpg"/>
+        <right url="img_20261105_115453__223/mobile/1.jpg"/>
+        <back  url="img_20261105_115453__223/mobile/2.jpg"/>
+        <left  url="img_20261105_115453__223/mobile/3.jpg"/>
+        <up    url="img_20261105_115453__223/mobile/4.jpg"/>
+        <down  url="img_20261105_115453__223/mobile/5.jpg"/>
       </image>
 
 
@@ -123,12 +123,12 @@
   
 
 
-<scene name="pano200"
+<scene name="pano225"
        heading="0"
-       thumburl="%FIRSTXML%/img_20261105_115512__200/thumbnail.jpg"
+       thumburl="%FIRSTXML%/img_20261105_115512__225/thumbnail.jpg"
        backgroundsound=""
        backgroundsoundloops="0"
-       titleid="pano200_title"
+       titleid="pano225_title"
        descriptionid=""
        multires="true"
        planar="false"
@@ -153,33 +153,33 @@
           hlookat="7.000000"
           vlookat="-18.000000"/>
 
-    <preview url="%FIRSTXML%/img_20261105_115512__200/preview.jpg" type="CUBESTRIP" striporder="FRBLUD"/>
+    <preview url="%FIRSTXML%/img_20261105_115512__225/preview.jpg" type="CUBESTRIP" striporder="FRBLUD"/>
 
     <image type="CUBE" multires="true" baseindex="0" tilesize="512" devices="!androidstock|webgl">
       <level tiledimagewidth="1592" tiledimageheight="1592">
-          <front url="img_20261105_115512__200/0/1/%v_%u.jpg"/>
-          <right url="img_20261105_115512__200/1/1/%v_%u.jpg"/>
-          <back  url="img_20261105_115512__200/2/1/%v_%u.jpg"/>
-          <left  url="img_20261105_115512__200/3/1/%v_%u.jpg"/>
-          <up    url="img_20261105_115512__200/4/1/%v_%u.jpg"/>
-          <down  url="img_20261105_115512__200/5/1/%v_%u.jpg"/>
+          <front url="img_20261105_115512__225/0/1/%v_%u.jpg"/>
+          <right url="img_20261105_115512__225/1/1/%v_%u.jpg"/>
+          <back  url="img_20261105_115512__225/2/1/%v_%u.jpg"/>
+          <left  url="img_20261105_115512__225/3/1/%v_%u.jpg"/>
+          <up    url="img_20261105_115512__225/4/1/%v_%u.jpg"/>
+          <down  url="img_20261105_115512__225/5/1/%v_%u.jpg"/>
       </level>
       <level tiledimagewidth="796" tiledimageheight="796">
-          <front url="img_20261105_115512__200/0/0/%v_%u.jpg"/>
-          <right url="img_20261105_115512__200/1/0/%v_%u.jpg"/>
-          <back  url="img_20261105_115512__200/2/0/%v_%u.jpg"/>
-          <left  url="img_20261105_115512__200/3/0/%v_%u.jpg"/>
-          <up    url="img_20261105_115512__200/4/0/%v_%u.jpg"/>
-          <down  url="img_20261105_115512__200/5/0/%v_%u.jpg"/>
+          <front url="img_20261105_115512__225/0/0/%v_%u.jpg"/>
+          <right url="img_20261105_115512__225/1/0/%v_%u.jpg"/>
+          <back  url="img_20261105_115512__225/2/0/%v_%u.jpg"/>
+          <left  url="img_20261105_115512__225/3/0/%v_%u.jpg"/>
+          <up    url="img_20261105_115512__225/4/0/%v_%u.jpg"/>
+          <down  url="img_20261105_115512__225/5/0/%v_%u.jpg"/>
       </level>
     </image>
       <image type="CUBE" devices="androidstock+!webgl">
-        <front url="img_20261105_115512__200/mobile/0.jpg"/>
-        <right url="img_20261105_115512__200/mobile/1.jpg"/>
-        <back  url="img_20261105_115512__200/mobile/2.jpg"/>
-        <left  url="img_20261105_115512__200/mobile/3.jpg"/>
-        <up    url="img_20261105_115512__200/mobile/4.jpg"/>
-        <down  url="img_20261105_115512__200/mobile/5.jpg"/>
+        <front url="img_20261105_115512__225/mobile/0.jpg"/>
+        <right url="img_20261105_115512__225/mobile/1.jpg"/>
+        <back  url="img_20261105_115512__225/mobile/2.jpg"/>
+        <left  url="img_20261105_115512__225/mobile/3.jpg"/>
+        <up    url="img_20261105_115512__225/mobile/4.jpg"/>
+        <down  url="img_20261105_115512__225/mobile/5.jpg"/>
       </image>
 
 
@@ -202,12 +202,12 @@
   
 
 
-<scene name="pano162"
+<scene name="pano227"
        heading="0"
-       thumburl="%FIRSTXML%/img_20261105_115612__162/thumbnail.jpg"
+       thumburl="%FIRSTXML%/img_20261105_115612__227/thumbnail.jpg"
        backgroundsound=""
        backgroundsoundloops="0"
-       titleid="pano162_title"
+       titleid="pano227_title"
        descriptionid=""
        multires="true"
        planar="false"
@@ -232,33 +232,33 @@
           hlookat="-1.500000"
           vlookat="0.000000"/>
 
-    <preview url="%FIRSTXML%/img_20261105_115612__162/preview.jpg" type="CUBESTRIP" striporder="FRBLUD"/>
+    <preview url="%FIRSTXML%/img_20261105_115612__227/preview.jpg" type="CUBESTRIP" striporder="FRBLUD"/>
 
     <image type="CUBE" multires="true" baseindex="0" tilesize="512" devices="!androidstock|webgl">
       <level tiledimagewidth="1592" tiledimageheight="1592">
-          <front url="img_20261105_115612__162/0/1/%v_%u.jpg"/>
-          <right url="img_20261105_115612__162/1/1/%v_%u.jpg"/>
-          <back  url="img_20261105_115612__162/2/1/%v_%u.jpg"/>
-          <left  url="img_20261105_115612__162/3/1/%v_%u.jpg"/>
-          <up    url="img_20261105_115612__162/4/1/%v_%u.jpg"/>
-          <down  url="img_20261105_115612__162/5/1/%v_%u.jpg"/>
+          <front url="img_20261105_115612__227/0/1/%v_%u.jpg"/>
+          <right url="img_20261105_115612__227/1/1/%v_%u.jpg"/>
+          <back  url="img_20261105_115612__227/2/1/%v_%u.jpg"/>
+          <left  url="img_20261105_115612__227/3/1/%v_%u.jpg"/>
+          <up    url="img_20261105_115612__227/4/1/%v_%u.jpg"/>
+          <down  url="img_20261105_115612__227/5/1/%v_%u.jpg"/>
       </level>
       <level tiledimagewidth="796" tiledimageheight="796">
-          <front url="img_20261105_115612__162/0/0/%v_%u.jpg"/>
-          <right url="img_20261105_115612__162/1/0/%v_%u.jpg"/>
-          <back  url="img_20261105_115612__162/2/0/%v_%u.jpg"/>
-          <left  url="img_20261105_115612__162/3/0/%v_%u.jpg"/>
-          <up    url="img_20261105_115612__162/4/0/%v_%u.jpg"/>
-          <down  url="img_20261105_115612__162/5/0/%v_%u.jpg"/>
+          <front url="img_20261105_115612__227/0/0/%v_%u.jpg"/>
+          <right url="img_20261105_115612__227/1/0/%v_%u.jpg"/>
+          <back  url="img_20261105_115612__227/2/0/%v_%u.jpg"/>
+          <left  url="img_20261105_115612__227/3/0/%v_%u.jpg"/>
+          <up    url="img_20261105_115612__227/4/0/%v_%u.jpg"/>
+          <down  url="img_20261105_115612__227/5/0/%v_%u.jpg"/>
       </level>
     </image>
       <image type="CUBE" devices="androidstock+!webgl">
-        <front url="img_20261105_115612__162/mobile/0.jpg"/>
-        <right url="img_20261105_115612__162/mobile/1.jpg"/>
-        <back  url="img_20261105_115612__162/mobile/2.jpg"/>
-        <left  url="img_20261105_115612__162/mobile/3.jpg"/>
-        <up    url="img_20261105_115612__162/mobile/4.jpg"/>
-        <down  url="img_20261105_115612__162/mobile/5.jpg"/>
+        <front url="img_20261105_115612__227/mobile/0.jpg"/>
+        <right url="img_20261105_115612__227/mobile/1.jpg"/>
+        <back  url="img_20261105_115612__227/mobile/2.jpg"/>
+        <left  url="img_20261105_115612__227/mobile/3.jpg"/>
+        <up    url="img_20261105_115612__227/mobile/4.jpg"/>
+        <down  url="img_20261105_115612__227/mobile/5.jpg"/>
       </image>
 
 
@@ -281,12 +281,12 @@
   
 
 
-<scene name="pano170"
+<scene name="pano229"
        heading="0"
-       thumburl="%FIRSTXML%/img_20261105_115912__170/thumbnail.jpg"
+       thumburl="%FIRSTXML%/img_20261105_115912__229/thumbnail.jpg"
        backgroundsound=""
        backgroundsoundloops="0"
-       titleid="pano170_title"
+       titleid="pano229_title"
        descriptionid=""
        multires="true"
        planar="false"
@@ -294,9 +294,9 @@
        seen="false">
 
 
-    <autorotate horizon="5.000000" tofov="109.000000" waittime="5" speed="4"/>
+    <autorotate horizon="5.000000" tofov="100.000000" waittime="5" speed="4"/>
 
-    <panoview h="-40.000000" v="5.000000" fov="109.000000" hmin="-180" hmax="180" vmin="-90" vmax="90" fovmax="128.571428571429" />
+    <panoview h="-40.000000" v="5.000000" fov="100.000000" hmin="-180" hmax="180" vmin="-90" vmax="90" fovmax="128.571428571429" />
 
     <view fisheye="0"
           limitview="range"
@@ -307,37 +307,37 @@
           maxpixelzoom=""
           fovmin="45"
           fovmax="128.571428571429"
-          fov="109.000000"
+          fov="100.000000"
           hlookat="-40.000000"
           vlookat="5.000000"/>
 
-    <preview url="%FIRSTXML%/img_20261105_115912__170/preview.jpg" type="CUBESTRIP" striporder="FRBLUD"/>
+    <preview url="%FIRSTXML%/img_20261105_115912__229/preview.jpg" type="CUBESTRIP" striporder="FRBLUD"/>
 
     <image type="CUBE" multires="true" baseindex="0" tilesize="512" devices="!androidstock|webgl">
       <level tiledimagewidth="1592" tiledimageheight="1592">
-          <front url="img_20261105_115912__170/0/1/%v_%u.jpg"/>
-          <right url="img_20261105_115912__170/1/1/%v_%u.jpg"/>
-          <back  url="img_20261105_115912__170/2/1/%v_%u.jpg"/>
-          <left  url="img_20261105_115912__170/3/1/%v_%u.jpg"/>
-          <up    url="img_20261105_115912__170/4/1/%v_%u.jpg"/>
-          <down  url="img_20261105_115912__170/5/1/%v_%u.jpg"/>
+          <front url="img_20261105_115912__229/0/1/%v_%u.jpg"/>
+          <right url="img_20261105_115912__229/1/1/%v_%u.jpg"/>
+          <back  url="img_20261105_115912__229/2/1/%v_%u.jpg"/>
+          <left  url="img_20261105_115912__229/3/1/%v_%u.jpg"/>
+          <up    url="img_20261105_115912__229/4/1/%v_%u.jpg"/>
+          <down  url="img_20261105_115912__229/5/1/%v_%u.jpg"/>
       </level>
       <level tiledimagewidth="796" tiledimageheight="796">
-          <front url="img_20261105_115912__170/0/0/%v_%u.jpg"/>
-          <right url="img_20261105_115912__170/1/0/%v_%u.jpg"/>
-          <back  url="img_20261105_115912__170/2/0/%v_%u.jpg"/>
-          <left  url="img_20261105_115912__170/3/0/%v_%u.jpg"/>
-          <up    url="img_20261105_115912__170/4/0/%v_%u.jpg"/>
-          <down  url="img_20261105_115912__170/5/0/%v_%u.jpg"/>
+          <front url="img_20261105_115912__229/0/0/%v_%u.jpg"/>
+          <right url="img_20261105_115912__229/1/0/%v_%u.jpg"/>
+          <back  url="img_20261105_115912__229/2/0/%v_%u.jpg"/>
+          <left  url="img_20261105_115912__229/3/0/%v_%u.jpg"/>
+          <up    url="img_20261105_115912__229/4/0/%v_%u.jpg"/>
+          <down  url="img_20261105_115912__229/5/0/%v_%u.jpg"/>
       </level>
     </image>
       <image type="CUBE" devices="androidstock+!webgl">
-        <front url="img_20261105_115912__170/mobile/0.jpg"/>
-        <right url="img_20261105_115912__170/mobile/1.jpg"/>
-        <back  url="img_20261105_115912__170/mobile/2.jpg"/>
-        <left  url="img_20261105_115912__170/mobile/3.jpg"/>
-        <up    url="img_20261105_115912__170/mobile/4.jpg"/>
-        <down  url="img_20261105_115912__170/mobile/5.jpg"/>
+        <front url="img_20261105_115912__229/mobile/0.jpg"/>
+        <right url="img_20261105_115912__229/mobile/1.jpg"/>
+        <back  url="img_20261105_115912__229/mobile/2.jpg"/>
+        <left  url="img_20261105_115912__229/mobile/3.jpg"/>
+        <up    url="img_20261105_115912__229/mobile/4.jpg"/>
+        <down  url="img_20261105_115912__229/mobile/5.jpg"/>
       </image>
 
 
@@ -360,12 +360,12 @@
   
 
 
-<scene name="pano171"
+<scene name="pano231"
        heading="0"
-       thumburl="%FIRSTXML%/img_20261105_121408__171/thumbnail.jpg"
+       thumburl="%FIRSTXML%/img_20261105_121408__231/thumbnail.jpg"
        backgroundsound=""
        backgroundsoundloops="0"
-       titleid="pano171_title"
+       titleid="pano231_title"
        descriptionid=""
        multires="true"
        planar="false"
@@ -390,33 +390,33 @@
           hlookat="40.000000"
           vlookat="-14.000000"/>
 
-    <preview url="%FIRSTXML%/img_20261105_121408__171/preview.jpg" type="CUBESTRIP" striporder="FRBLUD"/>
+    <preview url="%FIRSTXML%/img_20261105_121408__231/preview.jpg" type="CUBESTRIP" striporder="FRBLUD"/>
 
     <image type="CUBE" multires="true" baseindex="0" tilesize="512" devices="!androidstock|webgl">
       <level tiledimagewidth="1592" tiledimageheight="1592">
-          <front url="img_20261105_121408__171/0/1/%v_%u.jpg"/>
-          <right url="img_20261105_121408__171/1/1/%v_%u.jpg"/>
-          <back  url="img_20261105_121408__171/2/1/%v_%u.jpg"/>
-          <left  url="img_20261105_121408__171/3/1/%v_%u.jpg"/>
-          <up    url="img_20261105_121408__171/4/1/%v_%u.jpg"/>
-          <down  url="img_20261105_121408__171/5/1/%v_%u.jpg"/>
+          <front url="img_20261105_121408__231/0/1/%v_%u.jpg"/>
+          <right url="img_20261105_121408__231/1/1/%v_%u.jpg"/>
+          <back  url="img_20261105_121408__231/2/1/%v_%u.jpg"/>
+          <left  url="img_20261105_121408__231/3/1/%v_%u.jpg"/>
+          <up    url="img_20261105_121408__231/4/1/%v_%u.jpg"/>
+          <down  url="img_20261105_121408__231/5/1/%v_%u.jpg"/>
       </level>
       <level tiledimagewidth="796" tiledimageheight="796">
-          <front url="img_20261105_121408__171/0/0/%v_%u.jpg"/>
-          <right url="img_20261105_121408__171/1/0/%v_%u.jpg"/>
-          <back  url="img_20261105_121408__171/2/0/%v_%u.jpg"/>
-          <left  url="img_20261105_121408__171/3/0/%v_%u.jpg"/>
-          <up    url="img_20261105_121408__171/4/0/%v_%u.jpg"/>
-          <down  url="img_20261105_121408__171/5/0/%v_%u.jpg"/>
+          <front url="img_20261105_121408__231/0/0/%v_%u.jpg"/>
+          <right url="img_20261105_121408__231/1/0/%v_%u.jpg"/>
+          <back  url="img_20261105_121408__231/2/0/%v_%u.jpg"/>
+          <left  url="img_20261105_121408__231/3/0/%v_%u.jpg"/>
+          <up    url="img_20261105_121408__231/4/0/%v_%u.jpg"/>
+          <down  url="img_20261105_121408__231/5/0/%v_%u.jpg"/>
       </level>
     </image>
       <image type="CUBE" devices="androidstock+!webgl">
-        <front url="img_20261105_121408__171/mobile/0.jpg"/>
-        <right url="img_20261105_121408__171/mobile/1.jpg"/>
-        <back  url="img_20261105_121408__171/mobile/2.jpg"/>
-        <left  url="img_20261105_121408__171/mobile/3.jpg"/>
-        <up    url="img_20261105_121408__171/mobile/4.jpg"/>
-        <down  url="img_20261105_121408__171/mobile/5.jpg"/>
+        <front url="img_20261105_121408__231/mobile/0.jpg"/>
+        <right url="img_20261105_121408__231/mobile/1.jpg"/>
+        <back  url="img_20261105_121408__231/mobile/2.jpg"/>
+        <left  url="img_20261105_121408__231/mobile/3.jpg"/>
+        <up    url="img_20261105_121408__231/mobile/4.jpg"/>
+        <down  url="img_20261105_121408__231/mobile/5.jpg"/>
       </image>
 
 
@@ -439,12 +439,12 @@
   
 
 
-<scene name="pano172"
+<scene name="pano233"
        heading="0"
-       thumburl="%FIRSTXML%/img_20261105_121642__172/thumbnail.jpg"
+       thumburl="%FIRSTXML%/img_20261105_121642__233/thumbnail.jpg"
        backgroundsound=""
        backgroundsoundloops="0"
-       titleid="pano172_title"
+       titleid="pano233_title"
        descriptionid=""
        multires="true"
        planar="false"
@@ -469,33 +469,33 @@
           hlookat="136.000000"
           vlookat="12.000000"/>
 
-    <preview url="%FIRSTXML%/img_20261105_121642__172/preview.jpg" type="CUBESTRIP" striporder="FRBLUD"/>
+    <preview url="%FIRSTXML%/img_20261105_121642__233/preview.jpg" type="CUBESTRIP" striporder="FRBLUD"/>
 
     <image type="CUBE" multires="true" baseindex="0" tilesize="512" devices="!androidstock|webgl">
       <level tiledimagewidth="1592" tiledimageheight="1592">
-          <front url="img_20261105_121642__172/0/1/%v_%u.jpg"/>
-          <right url="img_20261105_121642__172/1/1/%v_%u.jpg"/>
-          <back  url="img_20261105_121642__172/2/1/%v_%u.jpg"/>
-          <left  url="img_20261105_121642__172/3/1/%v_%u.jpg"/>
-          <up    url="img_20261105_121642__172/4/1/%v_%u.jpg"/>
-          <down  url="img_20261105_121642__172/5/1/%v_%u.jpg"/>
+          <front url="img_20261105_121642__233/0/1/%v_%u.jpg"/>
+          <right url="img_20261105_121642__233/1/1/%v_%u.jpg"/>
+          <back  url="img_20261105_121642__233/2/1/%v_%u.jpg"/>
+          <left  url="img_20261105_121642__233/3/1/%v_%u.jpg"/>
+          <up    url="img_20261105_121642__233/4/1/%v_%u.jpg"/>
+          <down  url="img_20261105_121642__233/5/1/%v_%u.jpg"/>
       </level>
       <level tiledimagewidth="796" tiledimageheight="796">
-          <front url="img_20261105_121642__172/0/0/%v_%u.jpg"/>
-          <right url="img_20261105_121642__172/1/0/%v_%u.jpg"/>
-          <back  url="img_20261105_121642__172/2/0/%v_%u.jpg"/>
-          <left  url="img_20261105_121642__172/3/0/%v_%u.jpg"/>
-          <up    url="img_20261105_121642__172/4/0/%v_%u.jpg"/>
-          <down  url="img_20261105_121642__172/5/0/%v_%u.jpg"/>
+          <front url="img_20261105_121642__233/0/0/%v_%u.jpg"/>
+          <right url="img_20261105_121642__233/1/0/%v_%u.jpg"/>
+          <back  url="img_20261105_121642__233/2/0/%v_%u.jpg"/>
+          <left  url="img_20261105_121642__233/3/0/%v_%u.jpg"/>
+          <up    url="img_20261105_121642__233/4/0/%v_%u.jpg"/>
+          <down  url="img_20261105_121642__233/5/0/%v_%u.jpg"/>
       </level>
     </image>
       <image type="CUBE" devices="androidstock+!webgl">
-        <front url="img_20261105_121642__172/mobile/0.jpg"/>
-        <right url="img_20261105_121642__172/mobile/1.jpg"/>
-        <back  url="img_20261105_121642__172/mobile/2.jpg"/>
-        <left  url="img_20261105_121642__172/mobile/3.jpg"/>
-        <up    url="img_20261105_121642__172/mobile/4.jpg"/>
-        <down  url="img_20261105_121642__172/mobile/5.jpg"/>
+        <front url="img_20261105_121642__233/mobile/0.jpg"/>
+        <right url="img_20261105_121642__233/mobile/1.jpg"/>
+        <back  url="img_20261105_121642__233/mobile/2.jpg"/>
+        <left  url="img_20261105_121642__233/mobile/3.jpg"/>
+        <up    url="img_20261105_121642__233/mobile/4.jpg"/>
+        <down  url="img_20261105_121642__233/mobile/5.jpg"/>
       </image>
 
 
@@ -518,12 +518,12 @@
   
 
 
-<scene name="pano173"
+<scene name="pano235"
        heading="0"
-       thumburl="%FIRSTXML%/img_20261105_121701__173/thumbnail.jpg"
+       thumburl="%FIRSTXML%/img_20261105_121701__235/thumbnail.jpg"
        backgroundsound=""
        backgroundsoundloops="0"
-       titleid="pano173_title"
+       titleid="pano235_title"
        descriptionid=""
        multires="true"
        planar="false"
@@ -548,33 +548,33 @@
           hlookat="-71.000000"
           vlookat="-24.000000"/>
 
-    <preview url="%FIRSTXML%/img_20261105_121701__173/preview.jpg" type="CUBESTRIP" striporder="FRBLUD"/>
+    <preview url="%FIRSTXML%/img_20261105_121701__235/preview.jpg" type="CUBESTRIP" striporder="FRBLUD"/>
 
     <image type="CUBE" multires="true" baseindex="0" tilesize="512" devices="!androidstock|webgl">
       <level tiledimagewidth="1592" tiledimageheight="1592">
-          <front url="img_20261105_121701__173/0/1/%v_%u.jpg"/>
-          <right url="img_20261105_121701__173/1/1/%v_%u.jpg"/>
-          <back  url="img_20261105_121701__173/2/1/%v_%u.jpg"/>
-          <left  url="img_20261105_121701__173/3/1/%v_%u.jpg"/>
-          <up    url="img_20261105_121701__173/4/1/%v_%u.jpg"/>
-          <down  url="img_20261105_121701__173/5/1/%v_%u.jpg"/>
+          <front url="img_20261105_121701__235/0/1/%v_%u.jpg"/>
+          <right url="img_20261105_121701__235/1/1/%v_%u.jpg"/>
+          <back  url="img_20261105_121701__235/2/1/%v_%u.jpg"/>
+          <left  url="img_20261105_121701__235/3/1/%v_%u.jpg"/>
+          <up    url="img_20261105_121701__235/4/1/%v_%u.jpg"/>
+          <down  url="img_20261105_121701__235/5/1/%v_%u.jpg"/>
       </level>
       <level tiledimagewidth="796" tiledimageheight="796">
-          <front url="img_20261105_121701__173/0/0/%v_%u.jpg"/>
-          <right url="img_20261105_121701__173/1/0/%v_%u.jpg"/>
-          <back  url="img_20261105_121701__173/2/0/%v_%u.jpg"/>
-          <left  url="img_20261105_121701__173/3/0/%v_%u.jpg"/>
-          <up    url="img_20261105_121701__173/4/0/%v_%u.jpg"/>
-          <down  url="img_20261105_121701__173/5/0/%v_%u.jpg"/>
+          <front url="img_20261105_121701__235/0/0/%v_%u.jpg"/>
+          <right url="img_20261105_121701__235/1/0/%v_%u.jpg"/>
+          <back  url="img_20261105_121701__235/2/0/%v_%u.jpg"/>
+          <left  url="img_20261105_121701__235/3/0/%v_%u.jpg"/>
+          <up    url="img_20261105_121701__235/4/0/%v_%u.jpg"/>
+          <down  url="img_20261105_121701__235/5/0/%v_%u.jpg"/>
       </level>
     </image>
       <image type="CUBE" devices="androidstock+!webgl">
-        <front url="img_20261105_121701__173/mobile/0.jpg"/>
-        <right url="img_20261105_121701__173/mobile/1.jpg"/>
-        <back  url="img_20261105_121701__173/mobile/2.jpg"/>
-        <left  url="img_20261105_121701__173/mobile/3.jpg"/>
-        <up    url="img_20261105_121701__173/mobile/4.jpg"/>
-        <down  url="img_20261105_121701__173/mobile/5.jpg"/>
+        <front url="img_20261105_121701__235/mobile/0.jpg"/>
+        <right url="img_20261105_121701__235/mobile/1.jpg"/>
+        <back  url="img_20261105_121701__235/mobile/2.jpg"/>
+        <left  url="img_20261105_121701__235/mobile/3.jpg"/>
+        <up    url="img_20261105_121701__235/mobile/4.jpg"/>
+        <down  url="img_20261105_121701__235/mobile/5.jpg"/>
       </image>
 
 
@@ -597,12 +597,12 @@
   
 
 
-<scene name="pano174"
+<scene name="pano237"
        heading="0"
-       thumburl="%FIRSTXML%/img_20261105_122934__174/thumbnail.jpg"
+       thumburl="%FIRSTXML%/img_20261105_122934__237/thumbnail.jpg"
        backgroundsound=""
        backgroundsoundloops="0"
-       titleid="pano174_title"
+       titleid="pano237_title"
        descriptionid=""
        multires="true"
        planar="false"
@@ -627,33 +627,33 @@
           hlookat="108.000000"
           vlookat="-9.000000"/>
 
-    <preview url="%FIRSTXML%/img_20261105_122934__174/preview.jpg" type="CUBESTRIP" striporder="FRBLUD"/>
+    <preview url="%FIRSTXML%/img_20261105_122934__237/preview.jpg" type="CUBESTRIP" striporder="FRBLUD"/>
 
     <image type="CUBE" multires="true" baseindex="0" tilesize="512" devices="!androidstock|webgl">
       <level tiledimagewidth="1592" tiledimageheight="1592">
-          <front url="img_20261105_122934__174/0/1/%v_%u.jpg"/>
-          <right url="img_20261105_122934__174/1/1/%v_%u.jpg"/>
-          <back  url="img_20261105_122934__174/2/1/%v_%u.jpg"/>
-          <left  url="img_20261105_122934__174/3/1/%v_%u.jpg"/>
-          <up    url="img_20261105_122934__174/4/1/%v_%u.jpg"/>
-          <down  url="img_20261105_122934__174/5/1/%v_%u.jpg"/>
+          <front url="img_20261105_122934__237/0/1/%v_%u.jpg"/>
+          <right url="img_20261105_122934__237/1/1/%v_%u.jpg"/>
+          <back  url="img_20261105_122934__237/2/1/%v_%u.jpg"/>
+          <left  url="img_20261105_122934__237/3/1/%v_%u.jpg"/>
+          <up    url="img_20261105_122934__237/4/1/%v_%u.jpg"/>
+          <down  url="img_20261105_122934__237/5/1/%v_%u.jpg"/>
       </level>
       <level tiledimagewidth="796" tiledimageheight="796">
-          <front url="img_20261105_122934__174/0/0/%v_%u.jpg"/>
-          <right url="img_20261105_122934__174/1/0/%v_%u.jpg"/>
-          <back  url="img_20261105_122934__174/2/0/%v_%u.jpg"/>
-          <left  url="img_20261105_122934__174/3/0/%v_%u.jpg"/>
-          <up    url="img_20261105_122934__174/4/0/%v_%u.jpg"/>
-          <down  url="img_20261105_122934__174/5/0/%v_%u.jpg"/>
+          <front url="img_20261105_122934__237/0/0/%v_%u.jpg"/>
+          <right url="img_20261105_122934__237/1/0/%v_%u.jpg"/>
+          <back  url="img_20261105_122934__237/2/0/%v_%u.jpg"/>
+          <left  url="img_20261105_122934__237/3/0/%v_%u.jpg"/>
+          <up    url="img_20261105_122934__237/4/0/%v_%u.jpg"/>
+          <down  url="img_20261105_122934__237/5/0/%v_%u.jpg"/>
       </level>
     </image>
       <image type="CUBE" devices="androidstock+!webgl">
-        <front url="img_20261105_122934__174/mobile/0.jpg"/>
-        <right url="img_20261105_122934__174/mobile/1.jpg"/>
-        <back  url="img_20261105_122934__174/mobile/2.jpg"/>
-        <left  url="img_20261105_122934__174/mobile/3.jpg"/>
-        <up    url="img_20261105_122934__174/mobile/4.jpg"/>
-        <down  url="img_20261105_122934__174/mobile/5.jpg"/>
+        <front url="img_20261105_122934__237/mobile/0.jpg"/>
+        <right url="img_20261105_122934__237/mobile/1.jpg"/>
+        <back  url="img_20261105_122934__237/mobile/2.jpg"/>
+        <left  url="img_20261105_122934__237/mobile/3.jpg"/>
+        <up    url="img_20261105_122934__237/mobile/4.jpg"/>
+        <down  url="img_20261105_122934__237/mobile/5.jpg"/>
       </image>
 
 

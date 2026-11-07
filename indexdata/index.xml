@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<krpano version="1.18"
+        onstart="startup"
+        logkey="false"
+        bgcolor="#ffffff"
+        projectfloorplanurl=""
+        projecttitleid="project_title"
+        projectdescriptionid="">
+
+
+  <security cors="">
+  </security>
+
+  <krpano tour_firststartactiondone="false" tour_firstlittleplanet="true"/>
+  <events name="startbehavioursevents" onxmlcomplete="startbehavioursxmlcompleteaction();" onloadcomplete="startLittlePlanetIntroEffect();" keep="true"/>
+
+  <include url="%FIRSTXML%/index_skin.xml"/>
+  <include url="%FIRSTXML%/index_core.xml"/>
+  <include url="%FIRSTXML%/index_messages_en.xml"/>
+
+  <action name="startup">
+
+    if (skipintro !== null, skipintroaction(); );
+    if (s !== null, if (startscene === null, set(startscene, get(s));); );
+    if (startscene === null,
+      set(startscene, pano194);
+    );
+    mainloadscene(get(startscene));
+    if (h !== null,
+      if (v !== null,
+        if (f !== null,
+          lookat(get(h), get(v), get(f));
+         ,
+          lookat(get(h), get(v));
+        );
+      );
+    );
+  </action>
+
+
+
+
+  
+  
+
+
+<scene name="pano194"
+       heading="0"
+       thumburl="%FIRSTXML%/img_20261105_115453__194/thumbnail.jpg"
+       backgroundsound=""
+       backgroundsoundloops="0"
+       titleid="pano194_title"
+       descriptionid=""
+       multires="true"
+       planar="false"
+       full360="true"
+       seen="false">
+
+
+    <autorotate horizon="-11.000000" tofov="90.000000" waittime="5" speed="4"/>
+
+    <panoview h="1.100000" v="-11.000000" fov="90.000000" hmin="-180" hmax="180" vmin="-90" vmax="90" fovmax="128.571428571429" />
+
+    <view fisheye="0"
+          limitview="range"
+          hlookatmin="-180"
+          hlookatmax="180"
+          vlookatmin="-90"
+          vlookatmax="90"
+          maxpixelzoom=""
+          fovmin="45"
+          fovmax="128.571428571429"
+          fov="90.000000"
+          hlookat="1.100000"
+          vlookat="-11.000000"/>
+
+    <preview url="%FIRSTXML%/img_20261105_115453__194/preview.jpg" type="CUBESTRIP" striporder="FRBLUD"/>
+
+    <image type="CUBE" multires="true" baseindex="0" tilesize="512" devices="!androidstock|webgl">
+      <level tiledimagewidth="1592" tiledimageheight="1592">
+          <front url="img_20261105_115453__194/0/1/%v_%u.jpg"/>
+          <right url="img_20261105_115453__194/1/1/%v_%u.jpg"/>
+          <back  url="img_20261105_115453__194/2/1/%v_%u.jpg"/>
+          <left  url="img_20261105_115453__194/3/1/%v_%u.jpg"/>
+          <up    url="img_20261105_115453__194/4/1/%v_%u.jpg"/>
+          <down  url="img_20261105_115453__194/5/1/%v_%u.jpg"/>
+      </level>
+      <level tiledimagewidth="796" tiledimageheight="796">
+          <front url="img_20261105_115453__194/0/0/%v_%u.jpg"/>
+          <right url="img_20261105_115453__194/1/0/%v_%u.jpg"/>
+          <back  url="img_20261105_115453__194/2/0/%v_%u.jpg"/>
+          <left  url="img_20261105_115453__194/3/0/%v_%u.jpg"/>
+          <up    url="img_20261105_115453__194/4/0/%v_%u.jpg"/>
+          <down  url="img_20261105_115453__194/5/0/%v_%u.jpg"/>
+      </level>
+    </image>
+      <image type="CUBE" devices="androidstock+!webgl">
+        <front url="img_20261105_115453__194/mobile/0.jpg"/>
+        <right url="img_20261105_115453__194/mobile/1.jpg"/>
+        <back  url="img_20261105_115453__194/mobile/2.jpg"/>
+        <left  url="img_20261105_115453__194/mobile/3.jpg"/>
+        <up    url="img_20261105_115453__194/mobile/4.jpg"/>
+        <down  url="img_20261105_115453__194/mobile/5.jpg"/>
+      </image>
+
+
+
+
+  <action name="setzorder2onstandardspots">
+    if (device.html5,
+      ifnot (device.desktop,
+
+
+      );
+    );
+  </action>
+
+
+</scene>
+
+
+  
+  
+
+
+<scene name="pano200"
+       heading="0"
+       thumburl="%FIRSTXML%/img_20261105_115512__200/thumbnail.jpg"
+       backgroundsound=""
+       backgroundsoundloops="0"
+       titleid="pano200_title"
+       descriptionid=""
+       multires="true"
+       planar="false"
+       full360="true"
+       seen="false">
+
+
+    <autorotate horizon="-18.000000" tofov="100.000000" waittime="5" speed="4"/>
+
+    <panoview h="7.000000" v="-18.000000" fov="100.000000" hmin="-180" hmax="180" vmin="-90" vmax="90" fovmax="128.571428571429" />
+
+    <view fisheye="0"
+          limitview="range"
+          hlookatmin="-180"
+          hlookatmax="180"
+          vlookatmin="-90"
+          vlookatmax="90"
+          maxpixelzoom=""
+          fovmin="45"
+          fovmax="128.571428571429"
+          fov="100.000000"
+          hlookat="7.000000"
+          vlookat="-18.000000"/>
+
+    <preview url="%FIRSTXML%/img_20261105_115512__200/preview.jpg" type="CUBESTRIP" striporder="FRBLUD"/>
+
+    <image type="CUBE" multires="true" baseindex="0" tilesize="512" devices="!androidstock|webgl">
+      <level tiledimagewidth="1592" tiledimageheight="1592">
+          <front url="img_20261105_115512__200/0/1/%v_%u.jpg"/>
+          <right url="img_20261105_115512__200/1/1/%v_%u.jpg"/>
+          <back  url="img_20261105_115512__200/2/1/%v_%u.jpg"/>
+          <left  url="img_20261105_115512__200/3/1/%v_%u.jpg"/>
+          <up    url="img_20261105_115512__200/4/1/%v_%u.jpg"/>
+          <down  url="img_20261105_115512__200/5/1/%v_%u.jpg"/>
+      </level>
+      <level tiledimagewidth="796" tiledimageheight="796">
+          <front url="img_20261105_115512__200/0/0/%v_%u.jpg"/>
+          <right url="img_20261105_115512__200/1/0/%v_%u.jpg"/>
+          <back  url="img_20261105_115512__200/2/0/%v_%u.jpg"/>
+          <left  url="img_20261105_115512__200/3/0/%v_%u.jpg"/>
+          <up    url="img_20261105_115512__200/4/0/%v_%u.jpg"/>
+          <down  url="img_20261105_115512__200/5/0/%v_%u.jpg"/>
+      </level>
+    </image>
+      <image type="CUBE" devices="androidstock+!webgl">
+        <front url="img_20261105_115512__200/mobile/0.jpg"/>
+        <right url="img_20261105_115512__200/mobile/1.jpg"/>
+        <back  url="img_20261105_115512__200/mobile/2.jpg"/>
+        <left  url="img_20261105_115512__200/mobile/3.jpg"/>
+        <up    url="img_20261105_115512__200/mobile/4.jpg"/>
+        <down  url="img_20261105_115512__200/mobile/5.jpg"/>
+      </image>
+
+
+
+
+  <action name="setzorder2onstandardspots">
+    if (device.html5,
+      ifnot (device.desktop,
+
+
+      );
+    );
+  </action>
+
+
+</scene>
+
+
+  
+  
+
+
+<scene name="pano162"
+       heading="0"
+       thumburl="%FIRSTXML%/img_20261105_115612__162/thumbnail.jpg"
+       backgroundsound=""
+       backgroundsoundloops="0"
+       titleid="pano162_title"
+       descriptionid=""
+       multires="true"
+       planar="false"
+       full360="true"
+       seen="false">
+
+
+    <autorotate horizon="0.000000" tofov="90.000000" waittime="5" speed="4"/>
+
+    <panoview h="-1.500000" v="0.000000" fov="90.000000" hmin="-180" hmax="180" vmin="-90" vmax="90" fovmax="128.571428571429" />
+
+    <view fisheye="0"
+          limitview="range"
+          hlookatmin="-180"
+          hlookatmax="180"
+          vlookatmin="-90"
+          vlookatmax="90"
+          maxpixelzoom=""
+          fovmin="45"
+          fovmax="128.571428571429"
+          fov="90.000000"
+          hlookat="-1.500000"
+          vlookat="0.000000"/>
+
+    <preview url="%FIRSTXML%/img_20261105_115612__162/preview.jpg" type="CUBESTRIP" striporder="FRBLUD"/>
+
+    <image type="CUBE" multires="true" baseindex="0" tilesize="512" devices="!androidstock|webgl">
+      <level tiledimagewidth="1592" tiledimageheight="1592">
+          <front url="img_20261105_115612__162/0/1/%v_%u.jpg"/>
+          <right url="img_20261105_115612__162/1/1/%v_%u.jpg"/>
+          <back  url="img_20261105_115612__162/2/1/%v_%u.jpg"/>
+          <left  url="img_20261105_115612__162/3/1/%v_%u.jpg"/>
+          <up    url="img_20261105_115612__162/4/1/%v_%u.jpg"/>
+          <down  url="img_20261105_115612__162/5/1/%v_%u.jpg"/>
+      </level>
+      <level tiledimagewidth="796" tiledimageheight="796">
+          <front url="img_20261105_115612__162/0/0/%v_%u.jpg"/>
+          <right url="img_20261105_115612__162/1/0/%v_%u.jpg"/>
+          <back  url="img_20261105_115612__162/2/0/%v_%u.jpg"/>
+          <left  url="img_20261105_115612__162/3/0/%v_%u.jpg"/>
+          <up    url="img_20261105_115612__162/4/0/%v_%u.jpg"/>
+          <down  url="img_20261105_115612__162/5/0/%v_%u.jpg"/>
+      </level>
+    </image>
+      <image type="CUBE" devices="androidstock+!webgl">
+        <front url="img_20261105_115612__162/mobile/0.jpg"/>
+        <right url="img_20261105_115612__162/mobile/1.jpg"/>
+        <back  url="img_20261105_115612__162/mobile/2.jpg"/>
+        <left  url="img_20261105_115612__162/mobile/3.jpg"/>
+        <up    url="img_20261105_115612__162/mobile/4.jpg"/>
+        <down  url="img_20261105_115612__162/mobile/5.jpg"/>
+      </image>
+
+
+
+
+  <action name="setzorder2onstandardspots">
+    if (device.html5,
+      ifnot (device.desktop,
+
+
+      );
+    );
+  </action>
+
+
+</scene>
+
+
+  
+  
+
+
+<scene name="pano170"
+       heading="0"
+       thumburl="%FIRSTXML%/img_20261105_115912__170/thumbnail.jpg"
+       backgroundsound=""
+       backgroundsoundloops="0"
+       titleid="pano170_title"
+       descriptionid=""
+       multires="true"
+       planar="false"
+       full360="true"
+       seen="false">
+
+
+    <autorotate horizon="5.000000" tofov="109.000000" waittime="5" speed="4"/>
+
+    <panoview h="-40.000000" v="5.000000" fov="109.000000" hmin="-180" hmax="180" vmin="-90" vmax="90" fovmax="128.571428571429" />
+
+    <view fisheye="0"
+          limitview="range"
+          hlookatmin="-180"
+          hlookatmax="180"
+          vlookatmin="-90"
+          vlookatmax="90"
+          maxpixelzoom=""
+          fovmin="45"
+          fovmax="128.571428571429"
+          fov="109.000000"
+          hlookat="-40.000000"
+          vlookat="5.000000"/>
+
+    <preview url="%FIRSTXML%/img_20261105_115912__170/preview.jpg" type="CUBESTRIP" striporder="FRBLUD"/>
+
+    <image type="CUBE" multires="true" baseindex="0" tilesize="512" devices="!androidstock|webgl">
+      <level tiledimagewidth="1592" tiledimageheight="1592">
+          <front url="img_20261105_115912__170/0/1/%v_%u.jpg"/>
+          <right url="img_20261105_115912__170/1/1/%v_%u.jpg"/>
+          <back  url="img_20261105_115912__170/2/1/%v_%u.jpg"/>
+          <left  url="img_20261105_115912__170/3/1/%v_%u.jpg"/>
+          <up    url="img_20261105_115912__170/4/1/%v_%u.jpg"/>
+          <down  url="img_20261105_115912__170/5/1/%v_%u.jpg"/>
+      </level>
+      <level tiledimagewidth="796" tiledimageheight="796">
+          <front url="img_20261105_115912__170/0/0/%v_%u.jpg"/>
+          <right url="img_20261105_115912__170/1/0/%v_%u.jpg"/>
+          <back  url="img_20261105_115912__170/2/0/%v_%u.jpg"/>
+          <left  url="img_20261105_115912__170/3/0/%v_%u.jpg"/>
+          <up    url="img_20261105_115912__170/4/0/%v_%u.jpg"/>
+          <down  url="img_20261105_115912__170/5/0/%v_%u.jpg"/>
+      </level>
+    </image>
+      <image type="CUBE" devices="androidstock+!webgl">
+        <front url="img_20261105_115912__170/mobile/0.jpg"/>
+        <right url="img_20261105_115912__170/mobile/1.jpg"/>
+        <back  url="img_20261105_115912__170/mobile/2.jpg"/>
+        <left  url="img_20261105_115912__170/mobile/3.jpg"/>
+        <up    url="img_20261105_115912__170/mobile/4.jpg"/>
+        <down  url="img_20261105_115912__170/mobile/5.jpg"/>
+      </image>
+
+
+
+
+  <action name="setzorder2onstandardspots">
+    if (device.html5,
+      ifnot (device.desktop,
+
+
+      );
+    );
+  </action>
+
+
+</scene>
+
+
+  
+  
+
+
+<scene name="pano171"
+       heading="0"
+       thumburl="%FIRSTXML%/img_20261105_121408__171/thumbnail.jpg"
+       backgroundsound=""
+       backgroundsoundloops="0"
+       titleid="pano171_title"
+       descriptionid=""
+       multires="true"
+       planar="false"
+       full360="true"
+       seen="false">
+
+
+    <autorotate horizon="-14.000000" tofov="100.000000" waittime="5" speed="4"/>
+
+    <panoview h="40.000000" v="-14.000000" fov="100.000000" hmin="-180" hmax="180" vmin="-90" vmax="90" fovmax="128.571428571429" />
+
+    <view fisheye="0"
+          limitview="range"
+          hlookatmin="-180"
+          hlookatmax="180"
+          vlookatmin="-90"
+          vlookatmax="90"
+          maxpixelzoom=""
+          fovmin="45"
+          fovmax="128.571428571429"
+          fov="100.000000"
+          hlookat="40.000000"
+          vlookat="-14.000000"/>
+
+    <preview url="%FIRSTXML%/img_20261105_121408__171/preview.jpg" type="CUBESTRIP" striporder="FRBLUD"/>
+
+    <image type="CUBE" multires="true" baseindex="0" tilesize="512" devices="!androidstock|webgl">
+      <level tiledimagewidth="1592" tiledimageheight="1592">
+          <front url="img_20261105_121408__171/0/1/%v_%u.jpg"/>
+          <right url="img_20261105_121408__171/1/1/%v_%u.jpg"/>
+          <back  url="img_20261105_121408__171/2/1/%v_%u.jpg"/>
+          <left  url="img_20261105_121408__171/3/1/%v_%u.jpg"/>
+          <up    url="img_20261105_121408__171/4/1/%v_%u.jpg"/>
+          <down  url="img_20261105_121408__171/5/1/%v_%u.jpg"/>
+      </level>
+      <level tiledimagewidth="796" tiledimageheight="796">
+          <front url="img_20261105_121408__171/0/0/%v_%u.jpg"/>
+          <right url="img_20261105_121408__171/1/0/%v_%u.jpg"/>
+          <back  url="img_20261105_121408__171/2/0/%v_%u.jpg"/>
+          <left  url="img_20261105_121408__171/3/0/%v_%u.jpg"/>
+          <up    url="img_20261105_121408__171/4/0/%v_%u.jpg"/>
+          <down  url="img_20261105_121408__171/5/0/%v_%u.jpg"/>
+      </level>
+    </image>
+      <image type="CUBE" devices="androidstock+!webgl">
+        <front url="img_20261105_121408__171/mobile/0.jpg"/>
+        <right url="img_20261105_121408__171/mobile/1.jpg"/>
+        <back  url="img_20261105_121408__171/mobile/2.jpg"/>
+        <left  url="img_20261105_121408__171/mobile/3.jpg"/>
+        <up    url="img_20261105_121408__171/mobile/4.jpg"/>
+        <down  url="img_20261105_121408__171/mobile/5.jpg"/>
+      </image>
+
+
+
+
+  <action name="setzorder2onstandardspots">
+    if (device.html5,
+      ifnot (device.desktop,
+
+
+      );
+    );
+  </action>
+
+
+</scene>
+
+
+  
+  
+
+
+<scene name="pano172"
+       heading="0"
+       thumburl="%FIRSTXML%/img_20261105_121642__172/thumbnail.jpg"
+       backgroundsound=""
+       backgroundsoundloops="0"
+       titleid="pano172_title"
+       descriptionid=""
+       multires="true"
+       planar="false"
+       full360="true"
+       seen="false">
+
+
+    <autorotate horizon="12.000000" tofov="120.000000" waittime="5" speed="4"/>
+
+    <panoview h="136.000000" v="12.000000" fov="120.000000" hmin="-180" hmax="180" vmin="-90" vmax="90" fovmax="128.571428571429" />
+
+    <view fisheye="0"
+          limitview="range"
+          hlookatmin="-180"
+          hlookatmax="180"
+          vlookatmin="-90"
+          vlookatmax="90"
+          maxpixelzoom=""
+          fovmin="45"
+          fovmax="128.571428571429"
+          fov="120.000000"
+          hlookat="136.000000"
+          vlookat="12.000000"/>
+
+    <preview url="%FIRSTXML%/img_20261105_121642__172/preview.jpg" type="CUBESTRIP" striporder="FRBLUD"/>
+
+    <image type="CUBE" multires="true" baseindex="0" tilesize="512" devices="!androidstock|webgl">
+      <level tiledimagewidth="1592" tiledimageheight="1592">
+          <front url="img_20261105_121642__172/0/1/%v_%u.jpg"/>
+          <right url="img_20261105_121642__172/1/1/%v_%u.jpg"/>
+          <back  url="img_20261105_121642__172/2/1/%v_%u.jpg"/>
+          <left  url="img_20261105_121642__172/3/1/%v_%u.jpg"/>
+          <up    url="img_20261105_121642__172/4/1/%v_%u.jpg"/>
+          <down  url="img_20261105_121642__172/5/1/%v_%u.jpg"/>
+      </level>
+      <level tiledimagewidth="796" tiledimageheight="796">
+          <front url="img_20261105_121642__172/0/0/%v_%u.jpg"/>
+          <right url="img_20261105_121642__172/1/0/%v_%u.jpg"/>
+          <back  url="img_20261105_121642__172/2/0/%v_%u.jpg"/>
+          <left  url="img_20261105_121642__172/3/0/%v_%u.jpg"/>
+          <up    url="img_20261105_121642__172/4/0/%v_%u.jpg"/>
+          <down  url="img_20261105_121642__172/5/0/%v_%u.jpg"/>
+      </level>
+    </image>
+      <image type="CUBE" devices="androidstock+!webgl">
+        <front url="img_20261105_121642__172/mobile/0.jpg"/>
+        <right url="img_20261105_121642__172/mobile/1.jpg"/>
+        <back  url="img_20261105_121642__172/mobile/2.jpg"/>
+        <left  url="img_20261105_121642__172/mobile/3.jpg"/>
+        <up    url="img_20261105_121642__172/mobile/4.jpg"/>
+        <down  url="img_20261105_121642__172/mobile/5.jpg"/>
+      </image>
+
+
+
+
+  <action name="setzorder2onstandardspots">
+    if (device.html5,
+      ifnot (device.desktop,
+
+
+      );
+    );
+  </action>
+
+
+</scene>
+
+
+  
+  
+
+
+<scene name="pano173"
+       heading="0"
+       thumburl="%FIRSTXML%/img_20261105_121701__173/thumbnail.jpg"
+       backgroundsound=""
+       backgroundsoundloops="0"
+       titleid="pano173_title"
+       descriptionid=""
+       multires="true"
+       planar="false"
+       full360="true"
+       seen="false">
+
+
+    <autorotate horizon="-24.000000" tofov="90.000000" waittime="5" speed="4"/>
+
+    <panoview h="-71.000000" v="-24.000000" fov="90.000000" hmin="-180" hmax="180" vmin="-90" vmax="90" fovmax="128.571428571429" />
+
+    <view fisheye="0"
+          limitview="range"
+          hlookatmin="-180"
+          hlookatmax="180"
+          vlookatmin="-90"
+          vlookatmax="90"
+          maxpixelzoom=""
+          fovmin="45"
+          fovmax="128.571428571429"
+          fov="90.000000"
+          hlookat="-71.000000"
+          vlookat="-24.000000"/>
+
+    <preview url="%FIRSTXML%/img_20261105_121701__173/preview.jpg" type="CUBESTRIP" striporder="FRBLUD"/>
+
+    <image type="CUBE" multires="true" baseindex="0" tilesize="512" devices="!androidstock|webgl">
+      <level tiledimagewidth="1592" tiledimageheight="1592">
+          <front url="img_20261105_121701__173/0/1/%v_%u.jpg"/>
+          <right url="img_20261105_121701__173/1/1/%v_%u.jpg"/>
+          <back  url="img_20261105_121701__173/2/1/%v_%u.jpg"/>
+          <left  url="img_20261105_121701__173/3/1/%v_%u.jpg"/>
+          <up    url="img_20261105_121701__173/4/1/%v_%u.jpg"/>
+          <down  url="img_20261105_121701__173/5/1/%v_%u.jpg"/>
+      </level>
+      <level tiledimagewidth="796" tiledimageheight="796">
+          <front url="img_20261105_121701__173/0/0/%v_%u.jpg"/>
+          <right url="img_20261105_121701__173/1/0/%v_%u.jpg"/>
+          <back  url="img_20261105_121701__173/2/0/%v_%u.jpg"/>
+          <left  url="img_20261105_121701__173/3/0/%v_%u.jpg"/>
+          <up    url="img_20261105_121701__173/4/0/%v_%u.jpg"/>
+          <down  url="img_20261105_121701__173/5/0/%v_%u.jpg"/>
+      </level>
+    </image>
+      <image type="CUBE" devices="androidstock+!webgl">
+        <front url="img_20261105_121701__173/mobile/0.jpg"/>
+        <right url="img_20261105_121701__173/mobile/1.jpg"/>
+        <back  url="img_20261105_121701__173/mobile/2.jpg"/>
+        <left  url="img_20261105_121701__173/mobile/3.jpg"/>
+        <up    url="img_20261105_121701__173/mobile/4.jpg"/>
+        <down  url="img_20261105_121701__173/mobile/5.jpg"/>
+      </image>
+
+
+
+
+  <action name="setzorder2onstandardspots">
+    if (device.html5,
+      ifnot (device.desktop,
+
+
+      );
+    );
+  </action>
+
+
+</scene>
+
+
+  
+  
+
+
+<scene name="pano174"
+       heading="0"
+       thumburl="%FIRSTXML%/img_20261105_122934__174/thumbnail.jpg"
+       backgroundsound=""
+       backgroundsoundloops="0"
+       titleid="pano174_title"
+       descriptionid=""
+       multires="true"
+       planar="false"
+       full360="true"
+       seen="false">
+
+
+    <autorotate horizon="-9.000000" tofov="90.000000" waittime="5" speed="4"/>
+
+    <panoview h="108.000000" v="-9.000000" fov="90.000000" hmin="-180" hmax="180" vmin="-90" vmax="90" fovmax="128.571428571429" />
+
+    <view fisheye="0"
+          limitview="range"
+          hlookatmin="-180"
+          hlookatmax="180"
+          vlookatmin="-90"
+          vlookatmax="90"
+          maxpixelzoom=""
+          fovmin="45"
+          fovmax="128.571428571429"
+          fov="90.000000"
+          hlookat="108.000000"
+          vlookat="-9.000000"/>
+
+    <preview url="%FIRSTXML%/img_20261105_122934__174/preview.jpg" type="CUBESTRIP" striporder="FRBLUD"/>
+
+    <image type="CUBE" multires="true" baseindex="0" tilesize="512" devices="!androidstock|webgl">
+      <level tiledimagewidth="1592" tiledimageheight="1592">
+          <front url="img_20261105_122934__174/0/1/%v_%u.jpg"/>
+          <right url="img_20261105_122934__174/1/1/%v_%u.jpg"/>
+          <back  url="img_20261105_122934__174/2/1/%v_%u.jpg"/>
+          <left  url="img_20261105_122934__174/3/1/%v_%u.jpg"/>
+          <up    url="img_20261105_122934__174/4/1/%v_%u.jpg"/>
+          <down  url="img_20261105_122934__174/5/1/%v_%u.jpg"/>
+      </level>
+      <level tiledimagewidth="796" tiledimageheight="796">
+          <front url="img_20261105_122934__174/0/0/%v_%u.jpg"/>
+          <right url="img_20261105_122934__174/1/0/%v_%u.jpg"/>
+          <back  url="img_20261105_122934__174/2/0/%v_%u.jpg"/>
+          <left  url="img_20261105_122934__174/3/0/%v_%u.jpg"/>
+          <up    url="img_20261105_122934__174/4/0/%v_%u.jpg"/>
+          <down  url="img_20261105_122934__174/5/0/%v_%u.jpg"/>
+      </level>
+    </image>
+      <image type="CUBE" devices="androidstock+!webgl">
+        <front url="img_20261105_122934__174/mobile/0.jpg"/>
+        <right url="img_20261105_122934__174/mobile/1.jpg"/>
+        <back  url="img_20261105_122934__174/mobile/2.jpg"/>
+        <left  url="img_20261105_122934__174/mobile/3.jpg"/>
+        <up    url="img_20261105_122934__174/mobile/4.jpg"/>
+        <down  url="img_20261105_122934__174/mobile/5.jpg"/>
+      </image>
+
+
+
+
+  <action name="setzorder2onstandardspots">
+    if (device.html5,
+      ifnot (device.desktop,
+
+
+      );
+    );
+  </action>
+
+
+</scene>
+
+
+
+
+  <events name="eventKrpanoLoadedEvts" onxmlcomplete="eventKrpanoLoadedAction();" keep="true" />
+  <action name="eventKrpanoLoadedAction">
+    
+    set(events[eventKrpanoLoadedEvts].name, null);
+    js(eventKrpanoLoaded());
+  </action>
+
+</krpano>
+

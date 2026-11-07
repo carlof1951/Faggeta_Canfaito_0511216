@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<krpano version="1.18">
+
+
+  <style name="prevnexttheme2btn_alpha_style" 
+    alpha="0.0" onover="set(alpha, 1);" onout="set(alpha, 0.0);"
+    devices="desktop"
+  />
+  <style name="prevnexttheme2btn_alpha_style" 
+    alpha="0.5"
+    devices="tablet|mobile"
+  />
+  <layer name="prevnexttheme2btn_prev_pano" keep="true" align="left"
+         height="102%"
+         width="5%"
+         type="container"
+         bgcapture="true"
+         bgalpha="0.2"
+         bgcolor="0xde0825"
+         zorder="0"
+         onclick="loadPreviousScene();
+"
+         style="prevnexttheme2btn_alpha_style"
+         visible="false">
+    <layer name="prevnexttheme2prevPanoramaArrow" keep="true" align="center"
+         url="%FIRSTXML%/graphics/prevnextstrips/btn_scroll_left.png"
+         alpha="1"
+         zorder="0"
+         tooltip="prevnexttheme2prevSceneTip"
+         onhover="showTooltip('plugin',NULL,left);"
+         onout="hideTooltip();"
+         onclick="loadPreviousScene();
+"
+    />
+  </layer>
+
+  <layer name="prevnexttheme2btn_next_pano" keep="true" align="right"
+         height="102%"
+         width="5%"
+         type="container"
+         bgcapture="true"
+         bgalpha="0.2"
+         bgcolor="0xde0825"
+         zorder="0"
+         onclick="loadNextScene();
+"
+         style="prevnexttheme2btn_alpha_style"
+         visible="false">
+    <layer name="prevnexttheme2nextPanoramaArrow" keep="true" align="center"
+         url="%FIRSTXML%/graphics/prevnextstrips/btn_scroll_right.png"
+         alpha="1"
+         zorder="0"
+         tooltip="prevnexttheme2nextSceneTip"
+         onhover="showTooltip('plugin',NULL,right);"
+         onout="hideTooltip();"
+         onclick="loadNextScene();
+"
+    />
+  </layer>
+
+  <events name="prevnexttheme2hideshowcontrolsevent" 
+    onTourStart="prevnexttheme2showPrevNextControls();"
+    keep="true"/>
+  <action name="prevnexttheme2hidePrevNextControls">
+    set(layer[prevnexttheme2btn_prev_pano].visible, false);
+    set(layer[prevnexttheme2btn_next_pano].visible, false);
+  </action>
+  <action name="prevnexttheme2showPrevNextControls">
+    set(layer[prevnexttheme2btn_prev_pano].visible, true);
+    set(layer[prevnexttheme2btn_next_pano].visible, true);
+  </action>
+
+
+
+
+  <krpano theme2barbuilt="false" theme2backgroundwidthwhenclosed="0" theme2backgroundwidthwhenopened="0" theme2IsOpened="false" />
+  <events name="theme2events" onxmlcomplete="theme2buildMenuBar();" keep="true"/>
+  <action name="theme2buildMenuBar">
+    ifnot (theme2barbuilt, theme2buildMenu(); set(theme2barbuilt, true););
+  </action>
+
+  <action name="theme2buildMenu">
+    
+    set(theme2button_pos, 20);
+
+
+
+
+
+
+
+
+
+    inc(theme2button_pos, 20);
+
+    set(theme2backgroundwidthwhenopened, get(theme2button_pos));
+    
+    
+    add(theme2VerifyVisibility, 20, 20);
+    if(theme2backgroundwidthwhenopened == 20,
+      set(theme2backgroundwidthwhenopened, 0);
+    );
+
+	
+	
+  </action>
+
+	<events name="theme2StartTourEvents" onTourStart="theme2CallOnStartTour();" keep="true" />
+
+	<action name="theme2CallOnStartTour">
+		
+		set(layer[theme2menu_controlbar_bg_img].width, get(theme2button_pos));
+		set(layer[theme2menu_controlbar_bg].width, get(theme2button_pos));
+		theme2showMenuControls();
+	</action>
+
+  <style name="theme2_btn_style"
+         keep="true"
+         alpha="0.8"
+         edge="right" align="right"
+         width="36" height="36"
+         zorder="3"
+         onover="theme2ctrlbaronoveraction();"
+         onout="theme2ctrlbaronoutaction();"
+         />
+  <action name="theme2ctrlbaronoveraction">
+    tween(alpha,1,0.1,easeoutquad);
+    tween(y,-2,0.1,easeoutquad);
+  </action>  
+  <action name="theme2ctrlbaronoutaction">
+    tween(alpha,0.8);
+    tween(y,0,0.1,easeoutquad);
+    
+  </action>
+
+  <layer name="theme2menu_controlbar_bg_img"
+         keep="true"
+         align="bottom"
+         x="0" y="10"
+         url="%FIRSTXML%/graphics/classiccontrolbar/footer.png"
+         zorder="1"
+         width="40"
+         height="40"
+         scale9grid="10|10|80|80"
+         visible="false"
+         />
+  <layer name="theme2menu_controlbar_bg"
+         keep="true"
+         align="bottom"
+         x="0" y="10"
+         type="container"
+         zorder="2"
+         width="40"
+         height="40"
+         visible="false"
+         alpha="1.0"
+         >
+
+
+
+
+
+
+
+
+
+
+
+  </layer>
+
+
+
+
+  <action name="theme2hideMenuControls">
+    set(theme2IsOpened, false);
+
+
+
+
+
+
+
+
+
+
+    if(theme2backgroundwidthwhenclosed == 0,
+      set(layer[theme2menu_controlbar_bg_img].visible, false);
+      set(layer[theme2menu_controlbar_bg].visible, false);
+    ,
+      set(layer[theme2menu_controlbar_bg_img].visible, true);
+      set(layer[theme2menu_controlbar_bg].visible, true);
+    );
+    tween(layer[theme2menu_controlbar_bg_img].width , get(theme2backgroundwidthwhenclosed));
+    tween(layer[theme2menu_controlbar_bg].width , get(theme2backgroundwidthwhenclosed));
+    tween(layer[theme2menu_controlbar_bg_img].alpha, 0);
+  </action>
+  <action name="theme2showMenuControls">
+    set(theme2IsOpened, true);
+    if(theme2backgroundwidthwhenopened == 0,
+      set(layer[theme2menu_controlbar_bg_img].visible, false);
+      set(layer[theme2menu_controlbar_bg].visible, false);
+    ,
+      set(layer[theme2menu_controlbar_bg_img].visible, true);
+      set(layer[theme2menu_controlbar_bg].visible, true);
+    );
+    tween(layer[theme2menu_controlbar_bg_img].alpha, 0);
+    tween(layer[theme2menu_controlbar_bg_img].width, get(theme2backgroundwidthwhenopened), 0.5, easeOutQuad, theme2showMenuButtons(););
+    tween(layer[theme2menu_controlbar_bg].width, get(theme2backgroundwidthwhenopened), 0.5, easeOutQuad, theme2showMenuButtons(););
+  </action>
+  <action name="theme2showMenuButtons">
+
+
+
+
+
+
+
+
+
+
+  </action>
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  <plugin name="doubleclick"  url="%FIRSTXML%/graphics/doubleclick/fieldofview_dc.js" keep="true" ondblclick="ondoubleclick();"/>
+  <action name="ondoubleclick">switchFullscreen();
+
+
+  </action>
+
+
+<ptplugin name="projectionMenu" engine="kolorMenu">
+	<settings>
+		<option name="position" value="topleft" type="string" />
+		<option name="orientation" value="horizontal" type="string" />
+		<option name="sub_orientation" value="vertical" type="string" />
+		<option name="margin_x" value="0" type="int" />
+		<option name="margin_y" value="0" type="int" />
+		<option name="background_color" value="b20306" type="string" />
+		<option name="background_alpha" value="1" type="float" />
+		<option name="item_spacer" value="0" type="int" />
+		<option name="border_radius" value="0" type="int" />
+		<option name="full_size" value="false" type="bool" />
+		<option name="border_width" value="0" type="int" />
+		<option name="border_color" value="b3b3b3" type="string" />
+		<option name="border_alpha" value="1" type="string" />
+		<option name="border_style" value="solid" type="string" />
+
+		<option name="use_out_effect" value="true" type="bool" />
+		<option name="item_out_border_radius" value="0" type="int" />
+		<option name="item_hover_border_radius" value="0" type="int" />
+		<option name="item_out_border_width" value="0" type="int" />
+		<option name="item_out_border_color" value="b3b3b3" type="string" />
+		<option name="item_out_border_alpha" value="1" type="float" />
+		<option name="item_out_border_style" value="solid" type="string" />
+		<option name="item_hover_border_width" value="0" type="int" />
+		<option name="item_hover_border_style" value="solid" type="int" />
+		<option name="item_hover_border_color" value="b3b3b3" type="string" />
+		<option name="item_hover_border_alpha" value="1" type="float" />
+		<option name="item_out_bg_color" value="b20306" type="string" />
+		<option name="item_out_bg_alpha" value="1" type="float" />
+		<option name="item_out_font_color" value="ffffff" type="string" />
+		<option name="item_out_font_family" value="Arial" type="string" />
+		<option name="item_out_font_size" value="14" type="int" />
+		<option name="item_out_font_weight" value="normal" type="string" />
+		<option name="item_out_font_style" value="normal" type="string" />
+		<option name="item_out_font_decoration" value="normal" type="string" />
+		<option name="use_hover_effect" value="true" type="bool" />
+		<option name="item_hover_bg_color" value="d60307" type="string" />
+		<option name="item_hover_bg_alpha" value="1" type="float" />
+		<option name="item_hover_font_color" value="ffffff" type="string" />
+		<option name="item_hover_font_family" value="Arial" type="string" />
+		<option name="item_hover_font_size" value="14" type="int" />
+		<option name="item_hover_font_weight" value="normal" type="string" />
+		<option name="item_hover_font_style" value="normal" type="string" />
+		<option name="item_hover_font_decoration" value="normal" type="string" />
+
+		<option name="zorder" value="6" type="int" />
+	</settings>
+	<internaldata>
+		<group name="projectionMenuButton" titleID="projectionMenumenutitlelabel" thumbnail="" cssClass="projectionMenuButton" subMenu="true">
+			<item name="projViewNormal" cssClass="projViewNormal" titleID="projectionMenunormallabel" action="invokeKrFunction('setViewNormal();
+')"        thumbnail=""/>
+			<item name="projViewFisheye" cssClass="projViewFisheye" titleID="projectionMenufisheyelabel" action="invokeKrFunction('setViewFisheye();
+')"       thumbnail=""/>
+			<item name="projViewArchitectural" cssClass="projViewArchitectural" titleID="projectionMenuarchitecturallabel" action="invokeKrFunction('setViewArchitectural();
+')" thumbnail=""/>
+			<item name="projViewStereographic" cssClass="projViewStereographic" titleID="projectionMenustereographiclabel" action="invokeKrFunction('setViewStereographic();
+')" thumbnail=""/>
+			<item name="projViewPannini" cssClass="projViewPannini" titleID="projectionMenupanninilabel" action="invokeKrFunction('setViewPannini();
+')"       thumbnail=""/>
+			<item name="projViewLittlePlanet" cssClass="projViewLittlePlanet" titleID="projectionMenulittleplanetlabel" action="invokeKrFunction('setViewLittlePlanet();
+')"  thumbnail=""/>
+			<item name="projFisheyeBall" cssClass="projFisheyeBall" titleID="projectionMenufisheyeballlabel" action="invokeKrFunction('setViewFisheyeBall();
+')"   thumbnail=""/>
+
+		</group>
+	</internaldata>
+</ptplugin>
+
+<action name="kolorMenuJsReady-projectionMenu">
+	set(ptplugin[projectionMenu].jsready, true);
+</action>
+
+<action name="showKolorMenu-projectionMenu">
+	
+	ifnot(ptplugin[projectionMenu].isOpen,
+		set(ptplugin[projectionMenu].isOpen, true);
+		js(openKolorMenu(projectionMenu));
+	,
+		if(ptplugin[projectionMenu].jsready,
+			js(invokePluginFunction(projectionMenu, showKolorMenu));
+		);
+	);
+	
+</action>
+
+<action name="hideKolorMenu-projectionMenu">
+	if(ptplugin[projectionMenu].jsready,
+		js(invokePluginFunction(projectionMenu, hideKolorMenu));
+	);
+</action>
+
+
+<events name="kolorMenuEvents-projectionMenu" 
+	keep="true"
+	
+	
+	onTourStart="showKolorMenu-projectionMenu();"
+/>
+
+<action name="setViewPannini">
+	set(sceneisfull360, false);
+	if(scene[get(xml.scene)].full360,
+		sub(viewhfov, view.hlookatmax, view.hlookatmin);
+		if (viewhfov == 360,
+			sub(viewvfov, view.vlookatmax, view.vlookatmin);
+			if (viewvfov == 180,
+				set(sceneisfull360, true);
+			);
+		);
+	);
+	if (sceneisfull360 AND (device.webgl OR device.flash),
+		stopSetViewTweens();
+		setViewPanniniComplete();
+	);
+</action>
+
+<action name="setViewPanniniComplete">
+	tween(view.architectural, 0.0, 0.25, easeoutquad,
+		tween(view.fovmax, get(panoview.fovmax), distance(179, 1.00));
+		set(backtonormalfirst,false);
+		if(view.pannini LT 1.0, set(backtonormalfirst,true); );
+		if(view.stereographic == false, set(backtonormalfirst,true); );
+		if(backtonormalfirst, tween(view.fisheye, 0.0 ,distance(1.0, 0.25), easeoutquad, WAIT); );
+		tween(view.pannini, 1.0, distance(1.0, 0.75));
+		set(view.stereographic, true);
+		set(view.fisheyefovlink, 1.5);
+		tween(view.fisheye, 1.0, distance(1.0, 0.75));
+		tween(view.vlookat, get(panoview.v), 1.25);
+		if(panoview.fov LE view.fov, tween(view.fov, get(panoview.fov), distance(50, 0.45)); );
+	);
+</action>
+
+<action name="setViewFisheye">
+	set(sceneisfull360, false);
+	if(scene[get(xml.scene)].full360,
+		sub(viewhfov, view.hlookatmax, view.hlookatmin);
+		if (viewhfov == 360,
+			sub(viewvfov, view.vlookatmax, view.vlookatmin);
+			if (viewvfov == 180,
+				set(sceneisfull360, true);
+			);
+		);
+	);
+	if (sceneisfull360 AND (device.webgl OR device.flash),
+		stopSetViewTweens();
+		setViewFisheyeComplete();
+	);
+</action>
+
+<action name="setViewFisheyeComplete">
+	tween(view.architectural, 0.0, distance(1.0, 0.30), easeoutquad, 
+		tween(view.fisheye, 0.0, distance(1.0, 0.30), easeoutquad,
+			set(view.stereographic,false);
+			tween(view.pannini, 0.0, distance(1.0, 0.75));
+			tween(view.fovmax, 179, 0.5);
+			set(view.fisheyefovlink, 1.5);
+			if(panoview.fov LE view.fov, tween(view.fov, get(panoview.fov), distance(50, 0.45)); );
+			tween(view.fisheye, 0.40, distance(1.0, 0.75));
+			tween(view.vlookat, get(panoview.v), 1.25);
+		);
+	);
+</action>
+
+<action name="setViewStereographic">
+	set(sceneisfull360, false);
+	if(scene[get(xml.scene)].full360,
+		sub(viewhfov, view.hlookatmax, view.hlookatmin);
+		if (viewhfov == 360,
+			sub(viewvfov, view.vlookatmax, view.vlookatmin);
+			if (viewvfov == 180,
+				set(sceneisfull360, true);
+			);
+		);
+	);
+	if (sceneisfull360 AND (device.webgl OR device.flash),
+		stopSetViewTweens();
+		setViewStereographicComplete();
+	);
+</action>
+
+<action name="setViewStereographicComplete">
+	tween(view.architectural, 0.0, 0.25, easeoutquad, 
+		tween(view.fovmax, get(panoview.fovmax), distance(179, 1.00));
+		set(backtonormalfirst,false);
+		if(view.pannini GE 1.0, set(backtonormalfirst,true) );
+		if(view.stereographic == false, set(backtonormalfirst,true) );
+		if(backtonormalfirst, tween(view.fisheye, 0.0 ,distance(1.0, 0.25), easeoutquad, WAIT); );
+		tween(view.pannini, 0.0, distance(1.0, 0.75));
+		set(view.stereographic, true);
+		set(view.fisheyefovlink, 1.5);
+		tween(view.fisheye, 1.0, distance(1.0, 0.75), easeoutquad);
+		tween(view.vlookat, get(panoview.v), 1.25);
+		if(panoview.fov LE view.fov, tween(view.fov, get(panoview.fov), distance(50, 0.45)); );
+	);
+</action>
+
+  <action name="exitFullScreen" devices="fullscreensupport">set(tour_fullscreen,false);js(setFullscreen(false));</action>
+  <action name="enterFullScreen" devices="fullscreensupport">set(tour_fullscreen,true);js(setFullscreen(true));</action>
+  <action name="switchFullScreen">if(tour_fullscreen,exitFullScreen();,enterFullScreen(););</action>
+
+  
+  <events name="krpanoExitFullscreenEvent"
+    onexitfullscreen="if(tour_fullscreen,exitFullScreenChangeEvent(););"
+    keep="true" />
+
+  <action name="exitFullScreenChangeEvent" devices="fullscreensupport">set(tour_fullscreen,false);events.dispatch(onexitfullscreen);</action>
+  <action name="enterFullScreenChangeEvent" devices="fullscreensupport">set(tour_fullscreen,true);events.dispatch(onenterfullscreen);</action>
+  <action name="exitFullScreenFallback">set(fullscreen,false);</action>
+  <action name="enterFullScreenFallback">set(fullscreen,true);</action>
+  
+  <action name="resizeFullScreenEvent">delayedcall(0,updatescreen(););</action>
+
+<action name="setViewArchitectural">
+	stopSetViewTweens();
+	setViewArchitecturalComplete();
+</action>
+
+<action name="setViewArchitecturalComplete">
+	tween(view.fovmax, get(panoview.fovmax), distance(179, 1.00), easeoutquad);
+	tween(view.architectural, 1.0, distance(1.0, 0.45), easeoutquad, 
+		tween(view.pannini, 0.0, distance(1.0, 0.45));
+		tween(view.fisheye, 0.0, distance(1.0, 0.45), easeoutquad, 
+			set(view.fisheyefovlink, 0.5);
+			set(view.stereographic,false);
+			tween(view.vlookat, get(panoview.v), 1.25);
+			if(panoview.fov LE view.fov, tween(view.fov, get(panoview.fov), distance(50, 0.45)); );
+		);
+	);
+</action>
+
+<action name="setViewLittlePlanet">
+	set(sceneisfull360, false);
+	if(scene[get(xml.scene)].full360,
+		sub(viewhfov, view.hlookatmax, view.hlookatmin);
+		if (viewhfov == 360,
+			sub(viewvfov, view.vlookatmax, view.vlookatmin);
+			if (viewvfov == 180,
+				set(sceneisfull360, true);
+			);
+		);
+	);
+	if (sceneisfull360 AND (device.webgl OR device.flash),
+		stopSetViewTweens();
+		setViewLittlePlanetComplete();
+	);
+</action>
+
+<action name="setViewLittlePlanetComplete">
+	tween(view.architectural, 0.0, 0.25, easeoutquad, 
+		tween(view.vlookat, 90, distance(179, 1.50), easeoutquad);
+		set(backtonormalfirst,false);
+		if(view.pannini GE 1.0, set(backtonormalfirst,true) );
+		if(view.stereographic == false, set(backtonormalfirst,true) );
+		if(backtonormalfirst, tween(view.fisheye, 0.0 ,distance(1.0, 0.25), easeoutquad, WAIT); );
+		tween(view.pannini, 0.0, distance(1.0, 0.75));
+		if(panoview.fovmax LE 150, set(view.fovmax, 150); , set(view.fovmax, get(panoview.fovmax)); );
+		set(view.stereographic, true);
+		set(view.fisheyefovlink, 1.5);
+		tween(view.fisheye, 1.0, distance(1.0, 0.75), easeoutquad);
+		tween(view.fov, 150, distance(179, 0.75), easeoutquad);
+	);
+</action>
+
+<action name="setViewFisheyeBall">
+	set(sceneisfull360, false);
+	if(scene[get(xml.scene)].full360,
+		sub(viewhfov, view.hlookatmax, view.hlookatmin);
+		if (viewhfov == 360,
+			sub(viewvfov, view.vlookatmax, view.vlookatmin);
+			if (viewvfov == 180,
+				set(sceneisfull360, true);
+			);
+		);
+	);
+	if (sceneisfull360 AND (device.webgl OR device.flash),
+		stopSetViewTweens();
+		setViewFisheyeBallComplete();
+	);
+</action>
+
+<action name="setViewFisheyeBallComplete">
+	tween(view.architectural, 0.0, distance(1.0, 0.30), easeoutquad, 
+		set(view.fisheyefovlink, 1.5);
+		tween(view.fisheye, 1.0, distance(1.0, 0.30), easeoutquad,
+			set(view.stereographic,false);
+			tween(view.pannini, 0.0, distance(1.0, 0.45));
+			if(panoview.fovmax LE 179, set(view.fovmax, 179);, set(view.fovmax, get(panoview.fovmax)); );
+			tween(view.fov, 179, 4.0, easeInOutQuad );
+			tween(view.vlookat, get(panoview.v), 1.25);
+			set(display.details, 22);
+		);
+	);
+</action>
+
+<action name="setViewNormal">
+	stopSetViewTweens();
+	setViewNormalComplete();
+</action>
+
+<action name="setViewNormalComplete">
+	tween(view.architectural, 0.0, distance(1.0, 0.45), easeoutquad,
+		tween(view.fovmax, get(panoview.fovmax), distance(179, 1.00));
+		tween(view.vlookat, get(panoview.v), distance(90, 0.45));
+		tween(view.pannini, 0.0, distance(1.0, 0.45));
+		tween(view.fisheye, 0.0, distance(1.0, 0.45), easeoutquad,
+			set(view.stereographic,false);
+			set(view.fisheyefovlink, 0.5);
+			if(panoview.fov LE view.fov, tween(view.fov, get(panoview.fov), distance(50, 0.45)); );
+		);
+	);
+</action>
+
+<action name="stopSetViewTweens">
+	stoptween(view.fov);
+	stoptween(view.fovmax);
+	stoptween(view.vlookat);
+	stoptween(view.fisheye);
+	stoptween(view.architectural);
+	stoptween(view.pannini);
+</action>
+
+</krpano>
